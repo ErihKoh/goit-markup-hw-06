@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --primery-bg-color: #ffffff;
   --add-bg-color: #f5f4fa;
+}
 
 body {
   background: var(--primery-bg-color);
