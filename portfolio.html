@@ -334,21 +334,45 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
-          <p class="subscribe-text">
-            подпишитесь на рассылку
-          </p>
-          <a href="#" class="button subscribe-button centered"
-            >Подписаться
-            <svg width="24" height="24" class="icon-batton">
-              <use href="./image/sprite.svg#icon-send"></use>
-            </svg>
-          </a>
-        </div>
+    
+        <form class="js-speaker-form subscribe">
+          <label for="mail" class="subscribe-text ">подпишитесь на рассылку</label>
+          <div class="footer-form">
+            <input type="email" name="email" id="mail" class="mail-field">
+    
+            <button type="submit" class="button subscribe-button centered">
+              Подписаться
+              <svg width="24" height="24" class="icon-batton">
+                <use href="./image/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div> -->
       </div>
       <p class="copyright centered conteiner border-copy">
         2020 | Developed by GoIT Students
       </p>
     </footer>
+
+<!-- javascript -->
+
+<script src="./js/modal.js"></script>
+<script>
+  (() => {
+    document
+      .querySelector('.js-speaker-form')
+      .addEventListener('submit', e => {
+        e.preventDefault();
+
+        new FormData(e.currentTarget).forEach((value, name) =>
+          console.log(`${name}: ${value}`),
+        );
+
+        e.currentTarget.reset();
+      });
+  })();
+</script>
+
   </body>
 </html>
