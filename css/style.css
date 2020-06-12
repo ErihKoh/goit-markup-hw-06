@@ -269,7 +269,7 @@ p {
   text-transform: uppercase;
 }
 
-.hero-link {
+.hero-button {
   padding: 10px 32px;
 
   font-weight: bold;
@@ -812,16 +812,27 @@ address p:not(:last-child) {
   height: 36px;
 }
 
+.modal-head {
+  font-size: 20px;
+  line-height: 1.15;
+}
+
 .modal-form {
   display: inline-flex;
+  flex-direction: column;
 }
 
 .modal-button {
-  display: inline-block;
-
   padding: 10px 55px;
 
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
+}
+
+textarea {
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
 }
