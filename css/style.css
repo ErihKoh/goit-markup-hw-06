@@ -587,6 +587,12 @@ address p:not(:last-child) {
   align-items: baseline;
 }
 
+.footer-form ::placeholder {
+  padding: 18px 12px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .subscribe-button {
   display: inline-flex;
   /* min-width: 200px;
@@ -864,7 +870,7 @@ textarea {
   color: var(--accent-color);
 }
 
-.policy-checkbox {
+.policy input[type="checkbox"] {
   color: var(--title-text-color);
 }
 .modal-button {
