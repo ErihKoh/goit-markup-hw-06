@@ -830,7 +830,7 @@ textarea {
   border-radius: 4px;
   resize: none;
 }
-.modal-contacts {
+.modal-contacts input {
   display: inline-flex;
 
   height: 40px;
@@ -839,13 +839,13 @@ textarea {
   border-radius: 4px;
 }
 
-.modal-item {
+.modal-contacts input {
   display: flex;
   flex-direction: column;
   width: 448px;
 }
 
-.modal-item:not(:last-child) {
+.modal-contacts:not(:last-child) {
   margin-bottom: 28px;
 }
 
@@ -858,6 +858,10 @@ textarea {
   margin-left: 8.5px;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.policy-text a {
+  color: var(--accent-color);
 }
 
 .policy-checkbox {
