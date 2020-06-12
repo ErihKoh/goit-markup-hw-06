@@ -589,9 +589,9 @@ address p:not(:last-child) {
 
 .subscribe-button {
   display: inline-flex;
-  min-width: 200px;
+  /* min-width: 200px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 10px; */
   padding-left: 29px;
   padding-right: 13px;
   /* margin-top: 21px; */
@@ -814,4 +814,14 @@ address p:not(:last-child) {
 
 .modal-form {
   display: inline-flex;
+}
+
+.modal-button {
+  display: inline-block;
+
+  padding: 10px 55px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
 }
