@@ -591,7 +591,7 @@
             <form class="js-speaker-form modal-form" autocomplete="off">
               
                 
-                    <label for="" class="form-label">
+                    <label class="form-label">
                       <input type="text" name="name" placeholder=" "
                       class="form-field">
                       <span class="form-text">Имя</span>
@@ -600,7 +600,7 @@
                       </svg>
                     </label>
                    
-                      <label for="" class="form-label">
+                      <label class="form-label">
                       <input type="tel" name="tel" placeholder=" "
                       class="form-field">
                       <span class="form-text">Телефон</span>
@@ -609,7 +609,7 @@
                       </svg>
                     </label>
 
-                    <label for="" class="form-label">
+                    <label class="form-label">
                       <input type="email" name="modal-mail" placeholder=" "
                       class="form-field">
                       <span class="form-text">Почта</span>
@@ -619,17 +619,19 @@
                     </label>
                   
               
-                    <label for="" class="form-textarea">
+                    <label class="form-textarea">
                       <textarea name="comment" rows="5" placeholder=" " class="comments"></textarea>
                       <span class="form-comments">Комментарии</span>
                     </label>
                    
-             <div class="policy">
-                  <input type="checkbox" name="policy" id="policy">
-                <label for="policy" class="policy-text">Соглашаюсь с рассылкой и принимаю
+                  
+                <label class="form-policy">
+                  <input type="checkbox" name="policy" value="policy" class="checkbox">
+                  <span class="icon"></span>
+                  <span class="policy-text">
+                    Соглашаюсь с рассылкой и принимаю</span>
                   <a href="#">Условия договора</a>
                 </label>
-             </div>
               <button type="submit" class="button modal-button centered">
                 Отправить
               </button>

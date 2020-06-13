@@ -834,7 +834,7 @@ address p:not(:last-child) {
 }
 .comments {
   padding: 12px 16px;
-  margin-bottom: 20px;
+
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -861,10 +861,12 @@ address p:not(:last-child) {
 
 .comments:not(:placeholder-shown) + .form-comments {
   transform: scale(0.87) translateY(-40px);
+  color: var(--accent-color);
 }
 
 .comments:focus-within + .form-comments {
   transform: scale(0.87) translateY(-40px);
+  color: var(--accent-color);
 }
 
 .form-label {
@@ -918,30 +920,59 @@ address p:not(:last-child) {
 
 .form-field:not(:placeholder-shown) + .form-text {
   transform: scale(0.87) translate(-26px, -46px);
+  color: var(--accent-color);
 }
 
 .form-label:focus-within .form-text {
   transform: scale(0.87) translate(-26px, -46px);
+  color: var(--accent-color);
 }
 
-.policy {
-  display: inline-flex;
+.form-policy {
+  display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 .policy-text {
-  margin-left: 8.5px;
+  margin-right: 5px;
   font-size: 14px;
   line-height: 1.71;
 }
 
-.policy-text a {
+.form-policy a {
   color: var(--accent-color);
   text-decoration: underline;
 }
 
-.policy input[type="checkbox"] {
-  color: var(--title-text-color);
+.icon {
+  display: inline-block;
+  width: 15.9px;
+  height: 15px;
+  margin-right: 8.5px;
+
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
 }
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox:checked + .icon {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../image/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
 .modal-button {
   margin-top: 40px;
   margin-left: auto;
